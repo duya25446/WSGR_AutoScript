@@ -114,7 +114,7 @@ namespace WSGR_AutoScript
             string args = "-s " + target + " shell " + "kill " + ID;
             string output = await ManiproADB(args);
         }
-        public async Task Click(string target,int x,int y)
+        public async Task Click(string target, int x, int y)
         {
             string args = "-s " + target + " shell " + "input tap " + x.ToString() + " " + y.ToString();
             string output = await ManiproADB(args);
