@@ -4,16 +4,11 @@
     {
         string _target;
         string _RemotePath;
-        string _NI;
         public async Task MiniTouchInit()
         {
-            var adb = new ADB();
-            if (_NI == "IP")
-            {
-                await adb.ADBConnect(_target);
-            }
-            var abi = await adb.ADBGetabi(_target);
-            var sdk = await adb.ADBGetSDK(_target);
+            var adb = new ADB(_target);
+            var abi = await adb.ADBGetabi();
+            var sdk = await adb.ADBGetSDK();
             string MiniTouchPath;
             if (sdk == 0)
             {
@@ -28,16 +23,15 @@
             {
                 MiniTouchPath = "minitouch-prebuilt\\prebuilt\\" + abi + "\\bin\\minitouch-nopie";
             }
-            await adb.ADBpush(_target, MiniTouchPath, _RemotePath);
+            await adb.ADBpush(MiniTouchPath, _RemotePath);
             await adb.ManiproADB("-s " + _target + " forward tcp:1111 localabstract:minitouch");
-            await adb.ADBRun(_target, _RemotePath + "minitouch");
+            await adb.ADBRun(_RemotePath + "minitouch");
         }
         public MiniTouch(string target, string remote, string ni)
         {
             _target = target;
             _RemotePath = remote;
-            _NI = ni;
-            //await MiniTouchInit(target);
         }
+
     }
 }

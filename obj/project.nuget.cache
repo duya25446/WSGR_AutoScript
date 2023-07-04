@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "JdfZUM4EhmlLxFO4PldKM9N+HDemjjzl6tEas7EjyyKOL3uW1sK0ep1XQp1Hd9QIvzYaXhZJWIJ1j1rEIZ2Q+w==",
+  "dgSpecHash": "idaJ62ivjcyeknZU9wIe+NcOAMQwMnF7JYdcDQwRskefYBqVzr+ElZDejxPfKHyBVTO6db6I63pHR0W4t3hp4w==",
   "success": true,
-  "projectFilePath": "D:\\development\\git\\WSGR_AutoScript\\WSGR_AutoScript.csproj",
+  "projectFilePath": "D:\\code\\WSGR_AutoScript\\WSGR_AutoScript.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\i1454\\.nuget\\packages\\opencvsharp4\\4.7.0.20230115\\opencvsharp4.4.7.0.20230115.nupkg.sha512",
-    "C:\\Users\\i1454\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\i1454\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\i1454\\.nuget\\packages\\system.text.encoding.codepages\\7.0.0\\system.text.encoding.codepages.7.0.0.nupkg.sha512"
+    "C:\\Users\\admin\\.nuget\\packages\\opencvsharp4\\4.7.0.20230115\\opencvsharp4.4.7.0.20230115.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.text.encoding.codepages\\7.0.0\\system.text.encoding.codepages.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }
