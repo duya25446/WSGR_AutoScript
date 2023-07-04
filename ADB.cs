@@ -1,17 +1,12 @@
-﻿using System;
-using System.Diagnostics;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Diagnostics;
 using System.Text;
-using System.Threading.Tasks;
-using System.Net;
 
 namespace WSGR_AutoScript
 {
     class ADB ///storage/emulated/0/adbdata
     {
         string _ADBPath = "SDK_TOOL\\platform-tools-windows\\adb.exe";
-      
+
         public async Task<String> ManiproADB(string Args)
         {
             ProcessStartInfo ADBStartInfo = new ProcessStartInfo
@@ -58,25 +53,34 @@ namespace WSGR_AutoScript
             string args = "connect " + target;
             string output = await ManiproADB(args);
         }
-        public async Task ADBpush(string target,string local,string remote)
+        public async Task ADBpush(string target, string local, string remote)
         {
-            string args ="-s "+target+ " push "+local+" "+remote;
+            string args = "-s " + target + " push " + local + " " + remote;
             string output = await ManiproADB(args);
         }
         public async Task<string> ADBGetabi(string target)
         {
             string args = "-s " + target + " shell getprop ro.product.cpu.abi";
             string output = await ManiproADB(args);
-            return output.Replace("\r\n","");
+            return output.Replace("\r\n", "");
         }
         public async Task<int> ADBGetSDK(string target)
         {
             string args = "-s " + target + " shell getprop ro.build.version.sdk";
             string output = await ManiproADB(args);
             output = output.Replace("\r\n", "");
-            return int.Parse(output);
+            try
+            {
+                return int.Parse(output);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+                return 0;
+            }
         }
-        public async Task ADBRun(string target,string path)
+
+        public async Task ADBRun(string target, string path)
         {
             string args = "-s " + target + " shell " + "chmod 777 " + path;
             string output = await ManiproADB(args);
@@ -96,8 +100,6 @@ namespace WSGR_AutoScript
                     Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
                     ADB.StartInfo = ADBStartInfo;
                     ADB.Start();
-                    await ADB.WaitForExitAsync();
-                    Console.WriteLine("minitouch out");
                 }
             }
             catch (Exception e)
@@ -106,6 +108,21 @@ namespace WSGR_AutoScript
                 throw;
             }
             //output = await ManiproADB(args);
+        }
+        public async Task ADBKill(string target, string ID)
+        {
+            string args = "-s " + target + " shell " + "kill " + ID;
+            string output = await ManiproADB(args);
+        }
+        public async Task Click(string target,int x,int y)
+        {
+            string args = "-s " + target + " shell " + "input tap " + x.ToString() + " " + y.ToString();
+            string output = await ManiproADB(args);
+        }
+        public async Task Swipe(string target, int x1, int y1, int x2, int y2, int time)
+        {
+            string args = "-s " + target + " shell " + "input swipe " + x1.ToString() + " " + y1.ToString() + " " + x2.ToString() + " " + y2.ToString() + " " + time.ToString();
+            string output = await ManiproADB(args);
         }
     }
 }
