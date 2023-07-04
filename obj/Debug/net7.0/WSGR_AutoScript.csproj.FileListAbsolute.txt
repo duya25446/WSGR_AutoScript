@@ -1,0 +1,17 @@
+D:\development\code\WSGR_AutoScript\bin\Debug\net7.0\WSGR_AutoScript.exe
+D:\development\code\WSGR_AutoScript\bin\Debug\net7.0\WSGR_AutoScript.deps.json
+D:\development\code\WSGR_AutoScript\bin\Debug\net7.0\WSGR_AutoScript.runtimeconfig.json
+D:\development\code\WSGR_AutoScript\bin\Debug\net7.0\WSGR_AutoScript.dll
+D:\development\code\WSGR_AutoScript\bin\Debug\net7.0\WSGR_AutoScript.pdb
+D:\development\code\WSGR_AutoScript\bin\Debug\net7.0\OpenCvSharp.dll
+D:\development\code\WSGR_AutoScript\obj\Debug\net7.0\WSGR_AutoScript.csproj.AssemblyReference.cache
+D:\development\code\WSGR_AutoScript\obj\Debug\net7.0\WSGR_AutoScript.GeneratedMSBuildEditorConfig.editorconfig
+D:\development\code\WSGR_AutoScript\obj\Debug\net7.0\WSGR_AutoScript.AssemblyInfoInputs.cache
+D:\development\code\WSGR_AutoScript\obj\Debug\net7.0\WSGR_AutoScript.AssemblyInfo.cs
+D:\development\code\WSGR_AutoScript\obj\Debug\net7.0\WSGR_AutoScript.csproj.CoreCompileInputs.cache
+D:\development\code\WSGR_AutoScript\obj\Debug\net7.0\WSGR_AutoScript.csproj.CopyComplete
+D:\development\code\WSGR_AutoScript\obj\Debug\net7.0\WSGR_AutoScript.dll
+D:\development\code\WSGR_AutoScript\obj\Debug\net7.0\refint\WSGR_AutoScript.dll
+D:\development\code\WSGR_AutoScript\obj\Debug\net7.0\WSGR_AutoScript.pdb
+D:\development\code\WSGR_AutoScript\obj\Debug\net7.0\WSGR_AutoScript.genruntimeconfig.cache
+D:\development\code\WSGR_AutoScript\obj\Debug\net7.0\ref\WSGR_AutoScript.dll
